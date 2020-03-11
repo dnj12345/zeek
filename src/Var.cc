@@ -338,7 +338,7 @@ static bool has_attr(const attr_list* al, attr_tag tag)
 	}
 
 void begin_func(ID* id, const char* module_name, function_flavor flavor,
-                int is_redef, IntrusivePtr<FuncType> t, attr_list* attrs)
+                bool is_redef, IntrusivePtr<FuncType> t, attr_list* attrs)
 	{
 	if ( flavor == FUNC_FLAVOR_EVENT )
 		{
